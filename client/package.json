@@ -28,7 +28,7 @@
     "hammerjs": "^2.0.8",
     "howler": "^2.2.0",
     "jquery": "^3.5.1",
-    "moment": "^2.27.0",
+    "moment": "^2.29.2",
     "mp3-duration": "^1.1.0",
     "ngx-autosize": "^1.8.0",
     "ngx-socket-io": "^3.2.0",
