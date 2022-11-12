@@ -11,6 +11,12 @@ Not only that, sharing vocals photos and videos can be possible using a cloud se
 Besides, vocal calls and video calls are part of this application using `WebRTC` and `WebSockets`.
 Without forgetting deleting conversations, and deleting messages with an instant update, archiving conversations, and blocking users.
 The result was pretty amazing.
+
+# Video demonstration:
+
+[![Youtube Video](https://img.youtube.com/vi/D6L4mB4El00/0.jpg)](https://www.youtube.com/watch?v=D6L4mB4El00)
+
+
 # Functionality
 ## Signup page
 ![signup_page](https://amirplatform.s3.eu-central-1.amazonaws.com/project/wborpv51oj06molwyywa.png) 
