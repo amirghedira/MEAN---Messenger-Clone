@@ -10,17 +10,17 @@ Note that you need a cloudinary account to used in the backend as storage servic
 
 After adding a `.env` file you have to install the NodeJS packages on the backend (the project holds both the frontend under the client folder and the backend in the root directory of the project)
 
-To install the backend Node packages simply run:
+To install the backend Node packages, simply run:
 ``` bash
 npm install
 ```
-To run the backend server run:
+To run the backend server, run:
 ``` bash
 npm start
 ```
-To run the backend server in development mode run:
+To run the backend server in development mode, run:
 ``` bash
-npm start:dev
+npm run devStart
 ```
 Note that the server will listen on port `5000`
 ## frontend
@@ -28,7 +28,7 @@ Navigate to the client folder by running:
 ``` bash
 cd client
 ```
-Then to install the frontend packages run:
+Then to install the frontend packages, run:
 ``` bash
 npm install
 ```
