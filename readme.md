@@ -2,6 +2,43 @@
 
 After getting advanced in MEAN stack development, I decided to take further by making a messenger clone that contains most of its functionalities 
 
+
+# Launch the project
+## backend
+To launch the project, you have to first add a `.env` folder in the root directory that will hold the environment variables of the backend. You can find a `.env.example` folder as reference for the environment variables used.
+Note that you need a cloudinary account to used in the backend as storage service.
+
+After adding a `.env` file you have to install the NodeJS packages on the backend (the project holds both the frontend under the client folder and the backend in the root directory of the project)
+
+To install the backend Node packages simply run:
+``` bash
+npm install
+```
+To run the backend server run:
+``` bash
+npm start
+```
+To run the backend server in development mode run:
+``` bash
+npm start:dev
+```
+Note that the server will listen on port `5000`
+## frontend
+Navigate to the client folder by running:
+``` bash
+cd client
+```
+Then to install the frontend packages run:
+``` bash
+npm install
+```
+Now you are ready to start the frontend by running:
+``` bash
+npm start
+```
+Note that the frontend will be accessible on port `4200`
+
+
  # Features
 
  As messenger, it provides instant messaging between users and seen message functionality. Also, it provides conversation customization from the colors, the emojis to pseudo names.
