@@ -4,9 +4,18 @@ After getting advanced in MEAN stack development, I decided to take further by m
 
 
 # Launch the project
-## backend
 To launch the project, you have to first add a `.env` file in the root directory that will hold the environment variables of the backend. You can find a `.env.example` folder as reference for the environment variables used.
 Note that you need a cloudinary account to used in the backend as storage service.
+
+## Using Docker
+Note: Docker must be installed on your machine.
+To launch the project, simply run:
+```bash
+docker-compose -f docker-compose-local.yml up --build --force-recreate
+```
+## Manually
+### backend
+
 
 After adding a `.env` file you have to install the NodeJS packages on the backend (the project holds both the frontend under the client folder and the backend in the root directory of the project)
 
@@ -23,7 +32,7 @@ To run the backend server in development mode, run:
 npm run devStart
 ```
 Note that the server will listen on port `5000`
-## frontend
+### frontend
 Navigate to the client folder by running:
 ``` bash
 cd client
