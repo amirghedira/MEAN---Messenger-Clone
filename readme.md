@@ -9,7 +9,8 @@ Note that you need a cloudinary account to used in the backend as storage servic
 
 ## Using Docker
 Note: Docker must be installed on your machine.
-To launch the project, simply run:
+
+To launch the project (frontend and backend), simply run:
 ```bash
 docker-compose -f docker-compose-local.yml up --build --force-recreate
 ```
