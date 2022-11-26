@@ -4,5 +4,5 @@ services:
     restart: always
     image: messenger_ui:latest
     build:
-      context: .
+      context: ./client
       dockerfile: ./Dockerfile
