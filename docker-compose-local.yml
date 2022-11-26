@@ -1,0 +1,30 @@
+version: '3.3'
+services:
+  messenger_ui:
+    restart: always
+    container_name: messenger_ui
+    image: messenger_ui:latest
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+    networks:
+      - messenger
+    ports:
+      - "80:80"
+  messenger_api:
+    restart: always
+    container_name: messenger_api
+    image: messenger_api:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    networks:
+      - messenger
+    env_file: 
+      - .env
+    ports:
+      - "5000:5000"
+
+networks:
+  messenger:
+    driver: bridge

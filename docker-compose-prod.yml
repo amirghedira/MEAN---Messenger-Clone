@@ -1,0 +1,30 @@
+version: '3.3'
+services:
+  messenger_ui_prod:
+    restart: always
+    container_name: messenger_ui_prod
+    image: ${REGISTRY_IMAGE}/${IMAGE_NAME}:${VERSION}
+    networks:
+      - messenger_prod
+    env_file: 
+      - .env
+    ports:
+      - "80:80"
+  messenger_api_prod:
+    restart: always
+    container_name: messenger_api_prod
+    image: ${REGISTRY_IMAGE}/${IMAGE_NAME}:${VERSION}
+    networks:
+      - messenger_prod
+    env_file: 
+      - .env
+    ports:
+      - "5000:5000"
+
+networks:
+  messenger_prod:
+    driver: bridge
+
+
+
+    

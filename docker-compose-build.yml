@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  messenger_ui:
+    restart: always
+    image: messenger_ui:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
